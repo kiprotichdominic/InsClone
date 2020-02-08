@@ -129,5 +129,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # redirect on succesful login
-LOGIN_REDIRECT_URL = 'signup'
+LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL ='signup'

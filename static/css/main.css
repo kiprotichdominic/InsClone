@@ -5,3 +5,50 @@
     margin-right: 4px;
     top: 0;
 }
+
+   /* Login In & Registration Form */
+
+/* Login */
+
+.logincont{
+display: flex;
+justify-content: center;
+margin-top: 4%;
+width: 100%;
+
+}
+
+.loginform{
+width: auto;
+margin-left: 3%;
+margin-right: 30%;
+margin-top: 6%;
+
+}
+
+.login-playstorebtn{
+display: flex;
+justify-content: center;
+
+}
+
+/* Registration */
+.registform{
+    font-size: 9px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.regplaystorebtn{
+    display: flex;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+                                      
+  
+                                      /* Collapse Login In & Registration Form */
+  
+  /* ######################################################################################### */

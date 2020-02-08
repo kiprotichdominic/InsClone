@@ -1,12 +1,31 @@
-{% extends "instapp/base.html" %}
+{% extends "registration/base.html" %} 
 {% block content %}
-<div class="card m-3 p-3">
-    <h1 class="text-center">Log In</h1>
-    <form action="" method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Log In</button>
-    </form>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="logincont">
+                <!-- Image beside Login-Form -->
+                
+                <div class="loginimage">
+                    <img src="../../static/images/instagrampicture2.png " alt="instagram login phone ">
+                </div>
+                <!-- Output to Display error in login -->
+                <div class="loginform">
+                    <div class="card m-3 p-3">
+                        <h1 class="text-center">Log In</h1>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit">Log In</button>
+                        </form>
+                    </div>
+        
+                </div>
+        
+        
+            </div>
+        </div>
+    </div>           
 </div>
-{% endblock content %}
 
+{% endblock %}
