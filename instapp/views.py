@@ -16,7 +16,7 @@ class SignUpView(generic.CreateView):
     
 class PostCreateView(CreateView):
     model = Image
-    template_name = 'instapp/post_new.html'
+    template_name = 'instapp/newpost.html'
     fields = '__all__'
 
 class PostDetailView(DetailView):

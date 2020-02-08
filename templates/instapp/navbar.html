@@ -16,7 +16,20 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+      {% if user.is_authenticated %}
         <li>
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'images/insta.png' %}" height="30" alt="mdb logo">
+          </a> 
+        </li>
+        <div class="vl"></div>
+      <li>
+        <a class="navbar-brand" href="{% url 'home' %}">
+          <img src="{% static 'images/inst.png' %}" height="30" alt="mdb logo">
+        </a>
+      </li>
+      {% else %}
+      <li>
           <a class="navbar-brand" href="">
             <img src="{% static 'images/insta.png' %}" height="30" alt="mdb logo">
           </a> 
@@ -27,11 +40,12 @@
           <img src="{% static 'images/inst.png' %}" height="30" alt="mdb logo">
         </a>
       </li>
+      {% endif %}
       </ul>
       <ul class="my-2 my-lg-0 navbar-nav">
         {% if user.is_authenticated %}
                 <li class="nav-item active">
-              <a class="nav-link" href=""
+              <a class="nav-link" href="{% url 'new_image' %}"
                 >New Blog</a
               >
             </li>

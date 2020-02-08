@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'instapp.apps.InstappConfig',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -131,3 +132,5 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # redirect on succesful login
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL ='signup'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
