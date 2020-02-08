@@ -33,7 +33,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'instapp.apps.InstappConfig',
-    'accounts.apps.AccountsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -130,6 +129,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # redirect on succesful login
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL ='home'
+LOGIN_REDIRECT_URL = 'login'
+LOGOUT_REDIRECT_URL ='login'
 
