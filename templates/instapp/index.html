@@ -4,7 +4,7 @@
 <div class="card1">
     <div class="card-header">
       <img class="user-image" src="{{post.author.profile.image.url}}" />
-      <p class="user-name">{{ post.author }}</p>
+      <a href="{% url 'profile' %}"><p class="user-name">{{ post.author }}</p></a>
       <p class="time">{{ post.date_posted|date:"F d, Y" }}</p>
     </div>
     <div class="card-image">

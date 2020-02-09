@@ -45,7 +45,7 @@
       <ul class="my-2 my-lg-0 navbar-nav">
         {% if user.is_authenticated %}
                 <li class="nav-item active">
-              <a class="nav-link" href=""
+              <a class="nav-link" href="{% url 'post_create' %}"
                 >New Blog</a
               >
             </li>
