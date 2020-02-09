@@ -10,6 +10,7 @@ django = "==2.2.9"
 django-crispy-forms = "*"
 pillow = "*"
 django-multi-form-view = "*"
+whitenoise = "==3.3.1"
 
 [requires]
 python_version = "3.6"
