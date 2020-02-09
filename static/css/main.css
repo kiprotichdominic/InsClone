@@ -4,3 +4,71 @@
 .myimage{
     width: 200px;
 }
+
+
+.card1{
+  margin: 20px auto 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  width: 100%;
+  /* max-width: 320px; */
+  background: white;
+  font-size: 12px;
+}
+.card-header{
+	padding: 10px;
+  display: flex;
+  align-items: center;
+ 
+
+}
+.user-image{
+  font-weight: bold;
+  margin-left: 10px;
+	width: 40px;
+  border-radius: 50%;
+	overflow: hidden;
+}
+
+.user-name{
+	font-weight:bold;
+  margin-left: 10px;
+ 
+}
+.time{
+	color: #ccc;
+  text-align: right;
+  width: 100%;
+}
+
+.card-content{
+  padding: 10px;
+}
+
+.likes{
+  font-weight: bold;
+}
+
+.hashtag{
+  color: #4a5279;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+hr{
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.card-actions{
+  padding: 10px;
+  display: flex;
+}
+
+.comments-input{
+  margin-left: 10px;
+  border: none;
+  width: 100%;
+}
