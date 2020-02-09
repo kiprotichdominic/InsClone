@@ -4,14 +4,12 @@
 .myimage{
     width: 200px;
 }
-
-
 .card1{
   margin: 20px auto 0 auto;
   border: 1px solid #ccc;
   border-radius: 2px;
   width: 100%;
-  /* max-width: 320px; */
+  max-width: 650px;
   background: white;
   font-size: 12px;
 }
