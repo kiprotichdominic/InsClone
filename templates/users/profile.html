@@ -1,16 +1,48 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container">
-    <div class="card m-3 p-3" >
-        <div class="row">
-            <div class="col-md-6">
-                <img src="{{user.profile.image.url}}" alt="" class="img-fluid myimage">
-            </div>
-            <div class="col-md-6">
-                    <h2>{{ user.username }} <button class="ml-5 btn btn-outline-secondary"><a href="{% url 'profile_edit' %}">Edit Profile</a></button></h2>
-                    <p>{{user.email}}</p>
-            </div>    
-        </div>
-    </div>
-</div>
+<header>
+
+	<div class="container">
+
+		<div class="profile">
+
+			<div class="profile-image">
+
+				<img class='img' src="{{user.profile.image.url}}" alt="">
+
+			</div>
+
+			<div class="profile-user-settings">
+
+				<h1 class="profile-user-name">{{ user.username }}</h1>
+
+				<button class="btn profile-edit-btn"><a href="{% url 'profile_edit' %}">Edit Profile</a></button>
+
+				<button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
+
+			</div>
+
+			<div class="profile-stats">
+
+				<ul>
+					<li><span class="profile-stat-count">164</span> posts</li>
+					<li><span class="profile-stat-count">188</span> followers</li>
+					<li><span class="profile-stat-count">206</span> following</li>
+				</ul>
+
+			</div>
+
+			<div class="profile-bio">
+
+				<p><span class="profile-real-name">{{ user.username }}</span> {{ user.bio }}</p>
+
+			</div>
+
+		</div>
+		<!-- End of profile section -->
+
+	</div>
+	<!-- End of container -->
+
+</header>
 {% endblock content %}
