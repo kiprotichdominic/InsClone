@@ -1,31 +1,23 @@
-{% extends "registration/base.html" %} 
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
 {% block content %}
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="logincont">
-                <!-- Image beside Login-Form -->
-                
-                <div class="loginimage">
-                    <img src="../../static/images/instagrampicture2.png " alt="instagram login phone ">
+    <div class="container">
+        <div class="card m-3 p-3">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    <legend class="border-botton mb-4">Login</legend>
+                    {{ form|crispy }}
+                </fieldset>
+                <div class="form-group">
+                    <button class="btn btn-primary" type="submit">Log In</button>
                 </div>
-                <!-- Output to Display error in login -->
-                <div class="loginform">
-                    <div class="card m-3 p-3">
-                        <h1 class="text-center">Log In</h1>
-                        <form action="" method="POST">
-                            {% csrf_token %}
-                            {{ form.as_p }}
-                            <button type="submit">Log In</button>
-                        </form>
-                    </div>
-        
-                </div>
-        
-        
+            </form>
+            <div class="border-top pt-3">
+                <small class="text-muted">Don't have an account?
+                    <a href="{% url 'signup' %}" class="ml-2">Sign Up</a>
+                </small>
             </div>
         </div>
-    </div>           
-</div>
-
-{% endblock %}
+    </div>
+{% endblock content %}

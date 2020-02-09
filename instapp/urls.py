@@ -1,9 +1,11 @@
 from django.urls import path
-from .views import SignUpView, PostCreateView, PostListView, PostDetailView
+from django.conf.urls.static import static
+from django.conf import settings
+from .views import HomePageView
 
 urlpatterns = [
-    path('', SignUpView.as_view(), name='signup'),
-    path('image/new', PostCreateView.as_view(), name ='new_image'),
-    path('image/<int:pk>', PostDetailView.as_view(),name='image_detail'),
-    path('home/', PostListView.as_view(), name = 'home'),
+    path('home/', HomePageView.as_view(), name ='home'),
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
