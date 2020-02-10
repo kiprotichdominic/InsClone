@@ -1,48 +1,45 @@
 {% extends 'base.html' %}
 {% block content %}
 <header>
-
 	<div class="container">
-
 		<div class="profile">
-
 			<div class="profile-image">
-
 				<img class='img' src="{{user.profile.image.url}}" alt="">
-
 			</div>
-
 			<div class="profile-user-settings">
-
 				<h1 class="profile-user-name">{{ user.username }}</h1>
-
-				<button class="btn profile-edit-btn"><a href="{% url 'profile_edit' %}">Edit Profile</a></button>
-
-				<button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button>
-
+               <button class="btn profile-edit-btn"><a href="{% url 'profile_edit' %}">Edit Profile</a></button>             
+                <a href="" data-toggle="modal" data-target="#exampleModal"><button class="btn profile-settings-btn" aria-label="profile settings"><i class="fas fa-cog" aria-hidden="true"></i></button></a>
 			</div>
-
 			<div class="profile-stats">
-
 				<ul>
 					<li><span class="profile-stat-count">164</span> posts</li>
 					<li><span class="profile-stat-count">188</span> followers</li>
 					<li><span class="profile-stat-count">206</span> following</li>
 				</ul>
-
 			</div>
-
 			<div class="profile-bio">
-
 				<p><span class="profile-real-name">{{ user.username }}</span> {{ user.bio }}</p>
-
 			</div>
-
 		</div>
 		<!-- End of profile section -->
-
 	</div>
 	<!-- End of container -->
-
 </header>
+<!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Change Password</li>
+                  <li class="list-group-item"><a class="mycancel" href="{% url 'logout' %}">Log Out</a></li>
+                  <li class="list-group-item"><a href="" class="mycancel" data-dismiss="modal" aria-label="Close">Cancel</a></li>
+                </ul>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock content %}

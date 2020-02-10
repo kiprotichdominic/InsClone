@@ -155,7 +155,13 @@ margin-top: 2.3rem;
 .profile-edit-btn {
 font-weight: 600;
 }
-
+.mycancel {
+  color: black;
+}
+.mycancel:hover{
+  color:black;
+  text-decoration: none;
+}
 /* Loader */
 
 .loader {
