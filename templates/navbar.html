@@ -28,6 +28,9 @@
           <img src="{% static 'images/inst.png' %}" height="30" alt="mdb logo">
         </a>
       </li>
+      <form class="form-inline my-2 my-lg-0 text-center ml-5 searchme">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
       {% else %}
       <li>
           <a class="navbar-brand" href="">
@@ -42,6 +45,7 @@
       </li>
       {% endif %}
       </ul>
+
       <ul class="my-2 my-lg-0 navbar-nav">
         {% if user.is_authenticated %}
                 <li class="nav-item active">
