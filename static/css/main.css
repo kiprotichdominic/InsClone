@@ -1,6 +1,13 @@
 /* .card{
     border: none !important;
 } */
+body{
+    background-color: #fafafa;
+}
+.mynav{
+    background-color: white;
+    
+}
 .myimage{
   width: 200px;
 }

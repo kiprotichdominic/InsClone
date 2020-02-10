@@ -7,6 +7,29 @@
     padding-top: 7%;
     background-color: #fafafa;
 }
+.mylogin2{
+    padding-top: 0%;
+    background-color: #fafafa;
+}
+.myor {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+ .myor span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+ .col1{
+    color: #999;
+    text-align: center;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 17px;
+ }
 #root {
     height:100%;
   }
@@ -128,6 +151,7 @@
     background: cover no-repeat;
     width:175px;
     height:auto;
+    margin-left: 80px;
   }
   
   .form {
@@ -295,6 +319,9 @@
   }
   .myfoot{
       padding-top: 7%;
+  }
+  .myfoot2{
+      padding-top: -5%;
   }
   
   /* Media Queries */

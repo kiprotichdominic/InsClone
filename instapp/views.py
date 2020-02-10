@@ -11,7 +11,7 @@ class HomePageView(ListView):
     form_class= CreateCommentForm
     template_name = 'instapp/index.html'
     context_object_name = 'posts'
-    ordering =['date_posted']
+    ordering =['-date_posted']
     
 
 class PostDetailView(DetailView):

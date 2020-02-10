@@ -8,14 +8,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import generic
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 from .models import Profile
-# from django.contrib.auth.models import User
 
-
-# from .models import Image
-
-# class PostListView(ListView):
-#     model = Image
-#     template_name = 'instapp/index.html'
 
 class SignUpView(generic.CreateView):
     form_class = UserRegisterForm
@@ -49,18 +42,3 @@ def ProfileEditPageView(request):
 
     return render(request, 'users/profileedit.html', context)
     
-# class ProfileEditPageView(LoginRequiredMixin,FormView):
-#     # form_class = ProfileUpdateForm
-#     form_class = UserUpdateForm 
-#     success_url = reverse_lazy('profile')
-#     template_name = 'users/profileedit.html'
-    
-
-# class PostCreateView(CreateView):
-#     model = Image
-#     template_name = 'instapp/newpost.html'
-#     fields = ['image','caption']
-
-# class PostDetailView(DetailView):
-#     model = Image
-#     template_name = 'instapp/imagedetail.html'
