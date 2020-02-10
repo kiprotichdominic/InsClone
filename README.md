@@ -74,5 +74,6 @@ If you have any question or contributions, please email me at [kiprotichkorir36@
   
 ## License 
 
+- [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)]()
 
 * Copyright (c) 2020 **Kiprotich Dominic Korir**
