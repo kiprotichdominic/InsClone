@@ -5,7 +5,6 @@
     <div class="card-header">
       <img class="user-image" src="{{post.author.profile.image.url}}" />
       <a href="{% url 'profile' %}"><p class="user-name">{{ post.author }}</p></a>
-      <p class="time">{{ post.date_posted|date:"F d, Y" }}</p>
     </div>
     <div class="card-image">
       <img src="{{ post.image.url}}" class="img-fluid myimage2" width="100%" />
@@ -20,6 +19,7 @@
       <input class="comments-input" type="text" placeholder="Add a comment..." />
       <a href="#" class="action-icons"><i class="fa fa-ellipsis-h"></i></a>
     </div>
+    <p class="">{{ post.date_posted|timesince}}</p>
   </div>
   
   {% endfor %}
