@@ -15,3 +15,9 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('post_detail', kwargs={'pk': self.pk})
+    
+    
+# class Like(models.Model):
+#     user = models.ForeignKey(User)
+#     post = models.ForeignKey(Post)
+#     created = models.DateTimeField(auto_now_add=True)
