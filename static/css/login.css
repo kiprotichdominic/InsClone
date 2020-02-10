@@ -1,4 +1,7 @@
 
+.helptext{
+    display: none;
+  }
 /* Universal Selectors */
 .mylogin1{
     padding-top: 7%;
