@@ -16,6 +16,8 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse('post_detail', kwargs={'pk': self.pk})
     
+
+    # comment
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
     comment = models. CharField(max_length=140,null=True, blank = False)
